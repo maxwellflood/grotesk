@@ -1,12 +1,18 @@
 <script>
-
+    export let splashHeader
+    export let splashSubheader
 </script>
 
 <section class="splash-wrapper">
-        <h1>Creating brands with character</h1>
-        <p class="splash-project-name">
-            Project Name — Discipline
-        </p>
+    {#if splashHeader && splashSubheader}
+        <h1>{splashHeader}</h1>
+        <p class="small">{splashSubheader}</p>
+    {:else if splashSubheader}
+        <p class="small">{splashSubheader}</p>
+    {:else if splashHeader}
+        <h1>{splashHeader}</h1>
+    {:else}
+    {/if}
 </section>
 
 <style>
@@ -19,11 +25,4 @@
         display: flex;
         align-items: center;
     }
-
-    .splash-project-name{
-        position: absolute;
-        bottom: 64px;
-        left: 64px;
-    }
-
 </style>

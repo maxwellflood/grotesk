@@ -1,45 +1,37 @@
 <script>
     import Splash from './Splash.svelte'
-    import HomeProject from './HomeProject.svelte'
+    import Header from './Header.svelte'
+    import Image from '../Projects/Image.svelte'
+    import ImageFW from '../Projects/ImageFW.svelte'
+    import ImageText from '../Projects/ImageText.svelte'
+    import Text from '../Projects/Text.svelte'
 </script>
 
 
 <main>
     <Splash/>
-    <section class="home-intro">
-        <p>
-            We’re Grotesk. Where straightforward meets extraordinary.
-            <br/><br/>
-            We design exceptional brand experiences with an irreverent twinkle in their eye.
-            <br/><br/>
-            Let us help you experience the joy in creativity.
-        </p>
-    </section>
-    <section class="home-projects">
-        <HomeProject
-            projectTitle = {"Hello"}
-            
-        />
-        <HomeProject/>
-        <HomeProject/>
-        <HomeProject/>
-    </section>
+    <Header/>
+    <Image/>
+    <ImageText
+         textRight = "Project quote or interstitial text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+         imageLeft = "../assets/images/portrait-ph.png"
+    />
+    <ImageText
+         imageLeft = "../assets/images/portrait-ph.png"
+         imageRight = "../assets/images/portrait-ph.png"
+    />
+    <ImageFW/>
+    <Text/>
+    <Image/>
+    <ImageText
+         imageLeft = "../assets/images/portrait-ph.png"
+         imageRight = "../assets/images/portrait-ph.png"
+    />
+    <Image/>
+    <Image/>
 </main>
 
 
 <style>
-    .home-intro{
-        width: 100vw;
-        padding: 64px;
-        background-color: var(--white);
-        display: flex;
-        justify-content: flex-end;
-    }
 
-    .home-intro p{
-        padding: 160px 0;
-        font-size: 1.667vw;
-        line-height: 1.5;
-        max-width: 50%;
-    }
 </style>

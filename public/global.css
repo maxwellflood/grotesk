@@ -82,11 +82,43 @@ body{
 
 h1{
 	font-size: 5.556vw;
-	max-width: 50%;
 	line-height: 1;
 }
 
 p{	
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
+}
+
+p.large{	
+	font-size: 18px;
+}
+
+p.xxl{	
+	font-size: 32px;
+	line-height: 40px;
+}
+
+
+/* Layout */
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{
+	width: 100vw;
+	padding: 0 48px;
+	background-color: var(--white);
+}
+
+section.fw{
+	padding: 0;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
 }

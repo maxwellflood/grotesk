@@ -3,11 +3,16 @@
 </script>
 
 <nav class="">
-    <div class="nav-logo">
-        <img src="../assets/g-logo.svg" alt="">
+    <div class="nav-name">
+        <a href="">Grotesk</a>
     </div>
+    <!-- <div class="nav-logo">
+        <img src="../assets/g-logo.svg" alt="">
+    </div> -->
     <div class="nav-menu">
-        <div class="nav-button"></div>
+        <a href="">Work</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
     </div>
 </nav>
 
@@ -17,36 +22,38 @@
         position: fixed;
         z-index: 1000;
         width: 100%;
-        padding: 64px 64px 64px 64px;
+        padding: 40px 48px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        /* background-color: aqua; */
     }
 
-    .nav-logo{
-        width: 16px;
-        height: 24px;
-        cursor: pointer;
+    nav a{
+        font-size: 18px;
+        color: var(--black);
+        line-height: 24px;
+        text-decoration: none;
+    }
+
+    .nav-name{
+        padding: 16px 16px 0;
+        /* background-color: brown; */
     }
 
     .nav-menu{
+        padding: 16px 16px 0;
+        /* background-color: brown; */
+    }
+
+    .nav-menu a{
+        padding-left: 24px;
+    }
+
+    /* .nav-logo{
+        width: 16px;
         height: 24px;
-        width: 24px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
         cursor: pointer;
-    }
-
-    .nav-menu:hover > .nav-button{
-        transform: scale(1.75)
-    }
-
-    .nav-button{
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: black;
-        transition: transform 0.2s ease; 
-    }
+    } */
     
 </style>
