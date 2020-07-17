@@ -69,12 +69,15 @@
     />
     <Image
         image = "../assets/images/aethos/aethos-14.png"
+        backgroundColorBottom = #232D37
     />
     <Image
         image = "../assets/images/aethos/aethos-15.png"
+        backgroundColor = #232D37
     />
     <Image
         image = "../assets/images/aethos/aethos-16.png"
+        backgroundColorTop = #232D37
     />
     <Image
         image = "../assets/images/aethos/aethos-17.png"
