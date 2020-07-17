@@ -63,6 +63,7 @@
     />
     <Image
         image = "../assets/images/aethos/aethos-12-min.png"
+        backgroundColorTop = #232D37
     />
     <Image
         image = "../assets/images/aethos/aethos-13-min.png"
