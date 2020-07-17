@@ -59,7 +59,7 @@
     />
     <Image
         image = "../assets/images/aethos/aethos-11.png"
-        backgroundColorTop = #232D37
+        backgroundColor = #232D37
     />
     <Image
         image = "../assets/images/aethos/aethos-12.png"
