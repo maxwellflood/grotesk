@@ -9,11 +9,13 @@
 
 
 <main>
-    <Splash/>
+    <Splash
+          splashImg = "../assets/images/aethos/aethos-header.png"
+    />
     <Header/>
     <Image/>
     <ImageText
-         textRight = "Project quote or interstitial text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+         
          imageLeft = "../assets/images/portrait-ph.png"
     />
     <ImageText

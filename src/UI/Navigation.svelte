@@ -4,15 +4,15 @@
 
 <nav class="">
     <div class="nav-name">
-        <a href="">Grotesk</a>
+        <a href="#">Grotesk</a>
     </div>
     <!-- <div class="nav-logo">
         <img src="../assets/g-logo.svg" alt="">
     </div> -->
     <div class="nav-menu">
-        <a href="">Work</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
 </nav>
 

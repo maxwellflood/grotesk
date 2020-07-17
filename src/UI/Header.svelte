@@ -1,16 +1,18 @@
 <script>
-
+    export let pageTitle
+    export let pageSubtitle
+    export let pageText
 </script>
 
 <section>
     <div class="row p-med">
         <div class="col-half">
-            <h1 class="p-sm-bottom">Project title</h1>
-            <p>Client name — Discipline</p>
+            <h1 class="p-sm-bottom">{pageTitle}</h1>
+            <p>{pageSubtitle}</p>
         </div>
         <div class="col-half">
             <p class="xxl">
-                Project intro text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ipsum. Integer consectetur metus massa, non mattis urna posuere eu. Nunc laoreet elit maximus, cursus magna.
+                {pageText}
             </p>
         </div>
     </div>
@@ -19,7 +21,7 @@
 
 <style>
     section{
-        width: 100vw;
+        width: 100%;
         padding: 0 48px;
         background-color: var(--white);
     }
