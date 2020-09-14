@@ -83,6 +83,9 @@
     <Image
         image = "../assets/images/aethos/aethos-17-min.png"
     />
+    <Image
+        image = "../assets/images/aethos/aethos-18-min.png"
+    />
 </main>
 
 

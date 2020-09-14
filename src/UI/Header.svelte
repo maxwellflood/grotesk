@@ -41,8 +41,7 @@
     }
 
     .p-med{
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding: 160px 0;
     }
 
     .p-sm-bottom{
