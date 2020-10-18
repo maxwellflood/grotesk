@@ -22,6 +22,7 @@
 
 
 <main>
+    <div class="spacer"></div>
     <Splash splashSubheader="Project" splashHeader="Airgraft"/>
 
     <Header>
@@ -53,7 +54,6 @@
             </div>
         </div>
     </section>
-
 </main>
 
 
