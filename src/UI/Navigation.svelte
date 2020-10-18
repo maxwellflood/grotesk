@@ -1,18 +1,17 @@
 <script>
-
+    import Button from './Button.svelte'
 </script>
 
 <nav class="">
-    <div class="nav-name">
-        <a href="">Grotesk</a>
+    <div class="nav-logo-wrapper">
+        <div class="nav-logo">
+            <img src="../assets/g-logo.svg" alt="">
+        </div>
     </div>
-    <!-- <div class="nav-logo">
-        <img src="../assets/g-logo.svg" alt="">
-    </div> -->
     <div class="nav-menu">
-        <a href="">Work</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <Button mode="nav-btn" color="transparent">Projects</Button>
+        <Button mode="nav-btn" color="transparent">About</Button>
+        <Button mode="nav-btn" color="transparent">Contact</Button>
     </div>
 </nav>
 
@@ -20,40 +19,34 @@
 
     nav{
         position: fixed;
+        top: 0;
         z-index: 1000;
         width: 100%;
-        padding: 40px 48px;
+        padding: 40px 64px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         /* background-color: aqua; */
     }
 
-    nav a{
-        font-size: 18px;
-        color: var(--black);
-        line-height: 24px;
-        text-decoration: none;
-    }
-
-    .nav-name{
-        padding: 16px 16px 0;
-        /* background-color: brown; */
-    }
-
     .nav-menu{
-        padding: 16px 16px 0;
-        /* background-color: brown; */
+        transform: translateX(-15px)
     }
 
-    .nav-menu a{
-        padding-left: 24px;
-    }
-
-    /* .nav-logo{
-        width: 16px;
-        height: 24px;
+    .nav-logo-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
-    } */
+        /* background: var(--white); */
+        transform: translateX(18px)
+    }
+
+    .nav-logo{
+        width: 13px;
+        height: 18px;
+    }
     
 </style>

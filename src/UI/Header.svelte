@@ -5,13 +5,27 @@
 <section>
     <div class="row p-med">
         <div class="col-half">
-            <h1 class="p-sm-bottom">Project title</h1>
-            <p>Client name — Discipline</p>
+            <div class="type-wrapper">
+                <!-- <h2>Client</h2>
+                <h1>Airgraft</h1>
+                <div class="padding-top">
+                    <h2>Services</h2>
+                    <p class="large">UX, Digital design, Motion design</p>
+                </div> -->
+                <slot name="text-left"></slot>
+            </div>
         </div>
         <div class="col-half">
-            <p class="xxl">
-                Project intro text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in rutrum ipsum. Integer consectetur metus massa, non mattis urna posuere eu. Nunc laoreet elit maximus, cursus magna.
-            </p>
+            <div class="type-wrapper">
+                <!-- <h2>About us</h2>
+                <p class="large">
+                    Dedicated to creating the future of vaporization, Airgraft are a Montreal based product design studio focussed on creating an unparallelled consumer cannabis experience.
+                    <br>
+                    <br>
+                    We worked in close collaboration with Airgraft’s in-house design and develolment team to bring their digital aesthetic to life online.
+                </p> -->
+                <slot name="text-right"></slot>
+            </div>
         </div>
     </div>
 </section>
@@ -19,33 +33,8 @@
 
 <style>
     section{
-        width: 100vw;
-        padding: 0 48px;
+        width: 100%;
+        padding: 128px 48px 144px;
         background-color: var(--white);
     }
-
-    .row{
-        width: 100%;
-        /* background-color: antiquewhite; */
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .col-half{
-        width: 50%;
-        padding-left: 16px;
-        padding-right: 16px;
-        /* background-color: chocolate; */
-    }
-
-    .p-med{
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-
-    .p-sm-bottom{
-        padding-bottom: 32px;
-    }
-
-
 </style>

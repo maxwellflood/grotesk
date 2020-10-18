@@ -73,28 +73,52 @@ html{
 }
 
 body{
-	background-color: var(--black);
+	background-color: var(--white);
 	font-family: var(--basis-regular);
+	overflow-x: hidden;
 }
 
 
 /* Type Styles */
 
 h1{
-	font-size: 5.556vw;
+	font-size: 56px;
 	line-height: 1;
+	padding: 16px 0;
+}
+
+h2{
+	font-size: 12px;
+	font-family: 'basis grotesque mono';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 8px 0;
 }
 
 p{	
 	font-size: 16px;
 	line-height: 24px;
+	padding: 16px 0;
 }
 
-p.large{	
-	font-size: 18px;
+a{
+	text-decoration: none;
+	color: var(--black);
+	font-size: inherit;
+	line-height: 24px;
 }
 
-p.xxl{	
+.large{	
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.small{	
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.xxl{	
 	font-size: 32px;
 	line-height: 40px;
 }
@@ -108,7 +132,7 @@ img{
 }
 
 section{
-	width: 100vw;
+	width: 100%;
 	padding: 0 48px;
 	background-color: var(--white);
 }
@@ -121,4 +145,39 @@ section.fw{
 	width: 100%;
 	display: flex;
     justify-content: space-between;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-fw{
+	width: 100%;
+	padding: 0 16px; 
+}
+.col-half{
+	width: 50%;
+	padding: 0 16px; 
+}
+
+.type-wrapper{
+	width: 100%;
+	padding: 0 32px;
+}
+
+
+/* Spacing */
+
+.padding-top{
+	padding-top: 32px;
+}
+
+.padding-bottom{
+	padding-bottom: 32px;
+}
+
+.padding-top-small{
+	padding-top: 16px;
 }

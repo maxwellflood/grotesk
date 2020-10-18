@@ -1,37 +1,73 @@
 <script>
     import Splash from './Splash.svelte'
     import Header from './Header.svelte'
-    import Image from '../Projects/Image.svelte'
-    import ImageFW from '../Projects/ImageFW.svelte'
-    import ImageText from '../Projects/ImageText.svelte'
-    import Text from '../Projects/Text.svelte'
+
+
+    let projects = [
+        {
+            image : '../assets/images/projects/ae.jpg',
+            client: 'Aethos'
+        },
+        {
+            image : '../assets/images/projects/ag.jpg',
+            client: 'Airgraft'
+        },
+        {   
+            image : '../assets/images/projects/cat.jpg',
+            client: 'CAT'
+        },
+    ]   
+
 </script>
 
 
 <main>
-    <Splash/>
-    <Header/>
-    <Image/>
-    <ImageText
-         textRight = "Project quote or interstitial text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-         imageLeft = "../assets/images/portrait-ph.png"
-    />
-    <ImageText
-         imageLeft = "../assets/images/portrait-ph.png"
-         imageRight = "../assets/images/portrait-ph.png"
-    />
-    <ImageFW/>
-    <Text/>
-    <Image/>
-    <ImageText
-         imageLeft = "../assets/images/portrait-ph.png"
-         imageRight = "../assets/images/portrait-ph.png"
-    />
-    <Image/>
-    <Image/>
+    <Splash splashSubheader="Project" splashHeader="Airgraft"/>
+
+    <Header>
+        <div slot="text-right">
+            <h2>Creating brands with character</h2>
+            <p class="xxl">
+                We’re Grotesk, a creative studio that exists to create compelling and engaging brand experiences through research, strategy and design.
+            </p>
+        </div>
+    </Header>
+
+    <section class="projects">
+        {#each projects as project}
+            <div class="row padding-bottom">
+                <div class="project">
+                    <img src="{project.image}" alt="">
+                </div>
+            </div>
+        {/each}
+    </section>
+    
+    <section class="all-projects">
+        <div class="row">
+            <div class="col-fw">
+                 <div class="type-wrapper">
+                    <h2>Projects</h2>
+                    <p class="xxl">See all projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 
-<style>
 
+
+<style>
+     /* main{
+          transform: translateY(120px);
+     } */
+     .project{
+         width: 100%;
+     }
+     .all-projects{
+         padding-top: 128px;
+         padding-bottom: 144px;
+     }
 </style>
